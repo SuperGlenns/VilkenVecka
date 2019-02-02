@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD2788752205A5EF0018972A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2788742205A5EF0018972A /* AppDelegate.swift */; };
+		FD2788772205A5EF0018972A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2788762205A5EF0018972A /* ViewController.swift */; };
+		FD27887A2205A5EF0018972A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2788782205A5EF0018972A /* Main.storyboard */; };
+		FD27887C2205A5F00018972A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD27887B2205A5F00018972A /* Assets.xcassets */; };
+		FD27887F2205A5F00018972A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD27887D2205A5F00018972A /* LaunchScreen.storyboard */; };
+		FD2788842205A5F00018972A /* VilkenVecka WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FD2788832205A5F00018972A /* VilkenVecka WatchKit App.app */; };
+		FD27888A2205A5F00018972A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2788882205A5F00018972A /* Interface.storyboard */; };
+		FD27888C2205A5F10018972A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD27888B2205A5F10018972A /* Assets.xcassets */; };
+		FD2788932205A5F10018972A /* VilkenVecka WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FD2788922205A5F10018972A /* VilkenVecka WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FD2788982205A5F10018972A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2788972205A5F10018972A /* InterfaceController.swift */; };
+		FD27889A2205A5F10018972A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2788992205A5F10018972A /* ExtensionDelegate.swift */; };
+		FD27889C2205A5F10018972A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD27889B2205A5F10018972A /* ComplicationController.swift */; };
+		FD27889E2205A5F20018972A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD27889D2205A5F20018972A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD2788852205A5F00018972A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2788692205A5EF0018972A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD2788822205A5F00018972A;
+			remoteInfo = "VilkenVecka WatchKit App";
+		};
+		FD2788942205A5F10018972A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD2788692205A5EF0018972A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD2788912205A5F10018972A;
+			remoteInfo = "VilkenVecka WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD2788A52205A5F20018972A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FD2788932205A5F10018972A /* VilkenVecka WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2788A92205A5F20018972A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FD2788842205A5F00018972A /* VilkenVecka WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FD2788712205A5EF0018972A /* VilkenVecka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VilkenVecka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD2788742205A5EF0018972A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD2788762205A5EF0018972A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD2788792205A5EF0018972A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD27887B2205A5F00018972A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD27887E2205A5F00018972A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD2788802205A5F00018972A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD2788832205A5F00018972A /* VilkenVecka WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VilkenVecka WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD2788892205A5F00018972A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FD27888B2205A5F10018972A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD27888D2205A5F10018972A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD2788922205A5F10018972A /* VilkenVecka WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VilkenVecka WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD2788972205A5F10018972A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FD2788992205A5F10018972A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FD27889B2205A5F10018972A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		FD27889D2205A5F20018972A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD27889F2205A5F20018972A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD27886E2205A5EF0018972A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD27888F2205A5F10018972A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD2788682205A5EF0018972A = {
+			isa = PBXGroup;
+			children = (
+				FD2788732205A5EF0018972A /* VilkenVecka */,
+				FD2788872205A5F00018972A /* VilkenVecka WatchKit App */,
+				FD2788962205A5F10018972A /* VilkenVecka WatchKit Extension */,
+				FD2788722205A5EF0018972A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD2788722205A5EF0018972A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD2788712205A5EF0018972A /* VilkenVecka.app */,
+				FD2788832205A5F00018972A /* VilkenVecka WatchKit App.app */,
+				FD2788922205A5F10018972A /* VilkenVecka WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD2788732205A5EF0018972A /* VilkenVecka */ = {
+			isa = PBXGroup;
+			children = (
+				FD2788742205A5EF0018972A /* AppDelegate.swift */,
+				FD2788762205A5EF0018972A /* ViewController.swift */,
+				FD2788782205A5EF0018972A /* Main.storyboard */,
+				FD27887B2205A5F00018972A /* Assets.xcassets */,
+				FD27887D2205A5F00018972A /* LaunchScreen.storyboard */,
+				FD2788802205A5F00018972A /* Info.plist */,
+			);
+			path = VilkenVecka;
+			sourceTree = "<group>";
+		};
+		FD2788872205A5F00018972A /* VilkenVecka WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FD2788882205A5F00018972A /* Interface.storyboard */,
+				FD27888B2205A5F10018972A /* Assets.xcassets */,
+				FD27888D2205A5F10018972A /* Info.plist */,
+			);
+			path = "VilkenVecka WatchKit App";
+			sourceTree = "<group>";
+		};
+		FD2788962205A5F10018972A /* VilkenVecka WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FD2788972205A5F10018972A /* InterfaceController.swift */,
+				FD2788992205A5F10018972A /* ExtensionDelegate.swift */,
+				FD27889B2205A5F10018972A /* ComplicationController.swift */,
+				FD27889D2205A5F20018972A /* Assets.xcassets */,
+				FD27889F2205A5F20018972A /* Info.plist */,
+			);
+			path = "VilkenVecka WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD2788702205A5EF0018972A /* VilkenVecka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD2788AA2205A5F20018972A /* Build configuration list for PBXNativeTarget "VilkenVecka" */;
+			buildPhases = (
+				FD27886D2205A5EF0018972A /* Sources */,
+				FD27886E2205A5EF0018972A /* Frameworks */,
+				FD27886F2205A5EF0018972A /* Resources */,
+				FD2788A92205A5F20018972A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD2788862205A5F00018972A /* PBXTargetDependency */,
+			);
+			name = VilkenVecka;
+			productName = VilkenVecka;
+			productReference = FD2788712205A5EF0018972A /* VilkenVecka.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD2788822205A5F00018972A /* VilkenVecka WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD2788A62205A5F20018972A /* Build configuration list for PBXNativeTarget "VilkenVecka WatchKit App" */;
+			buildPhases = (
+				FD2788812205A5F00018972A /* Resources */,
+				FD2788A52205A5F20018972A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD2788952205A5F10018972A /* PBXTargetDependency */,
+			);
+			name = "VilkenVecka WatchKit App";
+			productName = "VilkenVecka WatchKit App";
+			productReference = FD2788832205A5F00018972A /* VilkenVecka WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FD2788912205A5F10018972A /* VilkenVecka WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD2788A22205A5F20018972A /* Build configuration list for PBXNativeTarget "VilkenVecka WatchKit Extension" */;
+			buildPhases = (
+				FD27888E2205A5F10018972A /* Sources */,
+				FD27888F2205A5F10018972A /* Frameworks */,
+				FD2788902205A5F10018972A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VilkenVecka WatchKit Extension";
+			productName = "VilkenVecka WatchKit Extension";
+			productReference = FD2788922205A5F10018972A /* VilkenVecka WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD2788692205A5EF0018972A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = SuperGlenn;
+				TargetAttributes = {
+					FD2788702205A5EF0018972A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FD2788822205A5F00018972A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FD2788912205A5F10018972A = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FD27886C2205A5EF0018972A /* Build configuration list for PBXProject "VilkenVecka" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD2788682205A5EF0018972A;
+			productRefGroup = FD2788722205A5EF0018972A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD2788702205A5EF0018972A /* VilkenVecka */,
+				FD2788822205A5F00018972A /* VilkenVecka WatchKit App */,
+				FD2788912205A5F10018972A /* VilkenVecka WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD27886F2205A5EF0018972A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD27887F2205A5F00018972A /* LaunchScreen.storyboard in Resources */,
+				FD27887C2205A5F00018972A /* Assets.xcassets in Resources */,
+				FD27887A2205A5EF0018972A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2788812205A5F00018972A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD27888C2205A5F10018972A /* Assets.xcassets in Resources */,
+				FD27888A2205A5F00018972A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2788902205A5F10018972A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD27889E2205A5F20018972A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD27886D2205A5EF0018972A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD2788772205A5EF0018972A /* ViewController.swift in Sources */,
+				FD2788752205A5EF0018972A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD27888E2205A5F10018972A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD27889A2205A5F10018972A /* ExtensionDelegate.swift in Sources */,
+				FD2788982205A5F10018972A /* InterfaceController.swift in Sources */,
+				FD27889C2205A5F10018972A /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD2788862205A5F00018972A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD2788822205A5F00018972A /* VilkenVecka WatchKit App */;
+			targetProxy = FD2788852205A5F00018972A /* PBXContainerItemProxy */;
+		};
+		FD2788952205A5F10018972A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD2788912205A5F10018972A /* VilkenVecka WatchKit Extension */;
+			targetProxy = FD2788942205A5F10018972A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD2788782205A5EF0018972A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD2788792205A5EF0018972A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD27887D2205A5F00018972A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD27887E2205A5F00018972A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FD2788882205A5F00018972A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD2788892205A5F00018972A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD2788A02205A5F20018972A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD2788A12205A5F20018972A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD2788A32205A5F20018972A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R84Z566RL7;
+				INFOPLIST_FILE = "VilkenVecka WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SuperGlenn.VilkenVecka.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		FD2788A42205A5F20018972A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R84Z566RL7;
+				INFOPLIST_FILE = "VilkenVecka WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SuperGlenn.VilkenVecka.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		FD2788A72205A5F20018972A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R84Z566RL7;
+				IBSC_MODULE = VilkenVecka_WatchKit_Extension;
+				INFOPLIST_FILE = "VilkenVecka WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = SuperGlenn.VilkenVecka.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		FD2788A82205A5F20018972A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R84Z566RL7;
+				IBSC_MODULE = VilkenVecka_WatchKit_Extension;
+				INFOPLIST_FILE = "VilkenVecka WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = SuperGlenn.VilkenVecka.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		FD2788AB2205A5F20018972A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R84Z566RL7;
+				INFOPLIST_FILE = VilkenVecka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SuperGlenn.VilkenVecka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD2788AC2205A5F20018972A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R84Z566RL7;
+				INFOPLIST_FILE = VilkenVecka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SuperGlenn.VilkenVecka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD27886C2205A5EF0018972A /* Build configuration list for PBXProject "VilkenVecka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2788A02205A5F20018972A /* Debug */,
+				FD2788A12205A5F20018972A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD2788A22205A5F20018972A /* Build configuration list for PBXNativeTarget "VilkenVecka WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2788A32205A5F20018972A /* Debug */,
+				FD2788A42205A5F20018972A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD2788A62205A5F20018972A /* Build configuration list for PBXNativeTarget "VilkenVecka WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2788A72205A5F20018972A /* Debug */,
+				FD2788A82205A5F20018972A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD2788AA2205A5F20018972A /* Build configuration list for PBXNativeTarget "VilkenVecka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2788AB2205A5F20018972A /* Debug */,
+				FD2788AC2205A5F20018972A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD2788692205A5EF0018972A /* Project object */;
+}
