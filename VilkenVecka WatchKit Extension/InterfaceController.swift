@@ -15,7 +15,7 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var weekLabel: WKInterfaceLabel!
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        let week = String(NSCalendar.current.component(.weekOfYear, from: Date()))
+        let week = String(Helper.week)
         weekLabel.setText(week)
     }
     

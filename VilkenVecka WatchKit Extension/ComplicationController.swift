@@ -78,7 +78,6 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     }
     
     private var week: Int {
-        return NSCalendar.current.component(.weekOfYear, from: Date())
+        return Helper.week
     }
-    
 }

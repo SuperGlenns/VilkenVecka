@@ -20,6 +20,7 @@
 		FD27889A2205A5F10018972A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2788992205A5F10018972A /* ExtensionDelegate.swift */; };
 		FD27889C2205A5F10018972A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD27889B2205A5F10018972A /* ComplicationController.swift */; };
 		FD27889E2205A5F20018972A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD27889D2205A5F20018972A /* Assets.xcassets */; };
+		FD2D3562220B099500B6AD15 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2D3561220B099500B6AD15 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		FD27889B2205A5F10018972A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		FD27889D2205A5F20018972A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD27889F2205A5F20018972A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD2D3561220B099500B6AD15 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				FD2788972205A5F10018972A /* InterfaceController.swift */,
 				FD2788992205A5F10018972A /* ExtensionDelegate.swift */,
 				FD27889B2205A5F10018972A /* ComplicationController.swift */,
+				FD2D3561220B099500B6AD15 /* Helper.swift */,
 				FD27889D2205A5F20018972A /* Assets.xcassets */,
 				FD27889F2205A5F20018972A /* Info.plist */,
 			);
@@ -301,6 +304,7 @@
 				FD27889A2205A5F10018972A /* ExtensionDelegate.swift in Sources */,
 				FD2788982205A5F10018972A /* InterfaceController.swift in Sources */,
 				FD27889C2205A5F10018972A /* ComplicationController.swift in Sources */,
+				FD2D3562220B099500B6AD15 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

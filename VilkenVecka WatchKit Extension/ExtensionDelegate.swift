@@ -12,6 +12,12 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
+        
+        WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: Helper.comingMonday, userInfo: nil) { (error: Error?) in
+            if let error = error {
+                print("Error occured while scheduling background refresh: \(error.localizedDescription)")
+            }
+        }
     }
 
     func applicationDidBecomeActive() {
@@ -30,10 +36,18 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
             switch task {
             case let backgroundTask as WKApplicationRefreshBackgroundTask:
                 // Be sure to complete the background task once you’re done.
-                backgroundTask.setTaskCompletedWithSnapshot(false)
+                let complicationServer = CLKComplicationServer.sharedInstance()
+                complicationServer.activeComplications?.forEach(complicationServer.reloadTimeline)
+                WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: Helper.comingMonday, userInfo: nil) { (error: Error?) in
+                    if let error = error {
+                        print("Error occured while scheduling background refresh: \(error.localizedDescription)")
+                    }
+                }
+                backgroundTask.setTaskCompletedWithSnapshot(true)
             case let snapshotTask as WKSnapshotRefreshBackgroundTask:
                 // Snapshot tasks have a unique completion call, make sure to set your expiration date
-                snapshotTask.setTaskCompleted(restoredDefaultState: true, estimatedSnapshotExpiration: Date.distantFuture, userInfo: nil)
+                
+                snapshotTask.setTaskCompleted(restoredDefaultState: true, estimatedSnapshotExpiration: Helper.comingMonday, userInfo: nil)
             case let connectivityTask as WKWatchConnectivityRefreshBackgroundTask:
                 // Be sure to complete the connectivity task once you’re done.
                 connectivityTask.setTaskCompletedWithSnapshot(false)
